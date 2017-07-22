@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light" >
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/theme_orange"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@drawable/back_white_btn" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="本地单据"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/search_1080" />
+    </LinearLayout>
+
+    <com.guantang.cangkuonline.TagFlowLayout.TagFlowLayout
+        android:id="@+id/timetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlelayout"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp" />
+
+    <LinearLayout
+        android:id="@+id/caozuolayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/timetext"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="状态:"
+            android:textColor="@color/ziti1"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_bg" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/allupLoadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键上传"
+            android:textSize="16sp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/allupload" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caozuolayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="点击、侧滑可对下列记录进行操作"
+        android:textColor="@color/ziti1"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:id="@+id/contentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Prompt"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/todaytext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无单据"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+
+        <com.guantang.cangkuonline.swipemenulistview.SwipeMenuListView
+            android:id="@+id/todaylist"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants" />
+    </FrameLayout>
+
+</RelativeLayout>

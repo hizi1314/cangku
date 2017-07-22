@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/exit_unsaveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selector_btnpress"
+        android:gravity="center"
+        android:textColor="@color/ziti1"
+        android:text="退出且不保存" />
+
+    <Button
+        android:id="@+id/exit_saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selector_btnpress2"
+        android:gravity="center"
+        android:textColor="@color/ziti1"
+        android:text="退出并保存" />
+
+    <Button
+        android:id="@+id/stayBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selector_btnpress3"
+        android:gravity="center"
+        android:textColor="@color/ziti1"
+        android:text="留在此页面上" />
+
+</LinearLayout>

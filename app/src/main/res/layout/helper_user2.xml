@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/theme_orange"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@drawable/back_white_btn" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="帮助"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/trans"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pro1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="1.登录遇到问题？"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/pro2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="2.在线离线模式的区别？"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/pro3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="3.注意事项及使用技巧"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/pro4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="4.同步参数信息的方法"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/pro5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="5.单据添加流程"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/pro6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="6.单据单据提交失败的原因"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/pro7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="7.手机端和网页端的作用是什么？"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+             <TextView
+                android:id="@+id/pro8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="8.软件一些的操作细节"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

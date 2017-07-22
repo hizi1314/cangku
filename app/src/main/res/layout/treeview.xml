@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_orange">
+        
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@drawable/back_white_btn" />
+        
+         <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/title_style"
+			android:layout_toRightOf="@id/back"
+            android:gravity="center"
+            android:text="类型选择" />
+        
+         <ImageButton
+            
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@drawable/back_white_btn"
+            android:visibility="invisible" />
+    </RelativeLayout>
+	
+   <ListView 
+        android:id="@+id/treeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+   
+</LinearLayout>

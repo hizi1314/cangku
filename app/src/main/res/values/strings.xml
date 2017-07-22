@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">冠唐云仓库管理</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="localname">本地用户</string>
+    <string name="login_ol">联网登录</string>
+    <string name="login">登\t录</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">加载更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="guantang">	    成都冠唐科技有限公司长期专注于企业信息化软件研发及销售，产品涵盖企业仓储管理、
+	    设备管理等领域，为企业用户提供“实用、易用、贴近用户实际需求的”信息化解决方案。</string>
+    <string name="gaishu"> 本系统需要手机端与网页端搭配使用，手机上的数据来源于服务器，录入单据
+	         后再提交至服务器，最后在网页端审核通过后完成出入库。</string>
+    <string name="qubie">·区别：三种模式的主要区别在于对货品信息的刷新，实时在线模式下，
+	     显示的货品信息都来源于服务器；手动刷新模式下，不会主动从服务器获取数据，只有在相应界面
+	     点击刷新按钮才会刷新相应的数据；离线模式下，只能查看缓存在手机上的数据，能进行出入库
+	     ，但不能提交单据。</string>
+    <string name="page1">1.随时随地查看货品详情和图片\n\n2.只要有网络就能出入库\n\n3.在线、离线模式随时切换\n
+	         \n4.多种权限细分流程\n\n5.独立数据库确保数据安全\n\n6.功能全面强大的网页端支持</string>
+    <string name="helper1_1">\t\t用户分为两类，一类是在官方服务器注册的用户，另一类是有独立域名的用户。
+     	    前者用户直接注册就可以使用，后者需要联系我们开设单独域名安装。
+     	    \n\t\t服务器选择的最后一项为独立域名的用户，服务器配置中可以设置服务器名称和地址。</string>
+    <string name="helper1_2">\t\t注册用登录首先要选择正确所注册的
+     	        服务器并且保证服务器配置中的地址正确，然后输入注册单位、用户名和密码。
+     	         \n\t\t独立域名的用户选择其他服务器登录，然后输入服务器地址、用户名和密码。</string>
+    <string name="helper1_3">\t\t我公司提供的官方服务器(上海)、官方服务器(广东)、官方服务器(北京)等服务器给用户注册公司帐号，
+     	     注册的新公司默认存在一个管理员帐号，用户名称和密码 是 admin， 如果需要设置独立域名服务器的用户只能联系我们开设单独域名安装。
+     	     \n\t\t 新注册的公司帐号需要导入相关的仓库数据，才能进行手机端的使用</string>
+    <string name="helper1_4">1.试用帐号使用
+     	     \n\n\t\t注册制和独立域名服务器都提供试用帐号，注册制的官方服务器(上海)、官方服务器(广东)、官方服务器(北京)等服务器的试用帐号
+     	     公司名称都是 测试，用户名和密码都是 admin，独立域名服务器的试用帐号的服务器地址是gd.gtcangku.com，用户名和密码也是 admin。
+     	     \n\n2.授权设备已达上限，设备未获得授权。
+     	       \n\n\t\t购买的手机终端数达到上限，如果从手机登录后未联网正常退出的话，那么就会长时间占据一个终端数，
+     	       在网页端上可以管理登录过的手机终端。
+     	       \n\n3.手机串号读取失败。
+     	       \n\n\t\t因为系统是通过手机串号识别登录的终端，获取不到串号将不能登录。点击“手机串号”不能查看串号的话，
+     	       通常是没有设置权限，如小米部分机型。"解决办法是在设置—>应用程序管理—>选择“冠唐仓库OL”—>权限管理—>手机识别码。</string>
+    <string name="helper1_5">4.该设备已被禁用。
+     	       \n\n\t\t该手机终端被网页端管理员禁用，不能从该设备登录系统。
+     	        \n\n5.获取数据失败，请重试。
+     	       \n\n\t\t造成获取数据失败的原因有很多，如果出现这种情况，首先检查一下网络情况是否通畅;
+     	       然后可以通过网页端访问确认服务器是否正常;如果还是不能访问的话，就联系我们的技术人员帮您处理。
+     	         \n\n\t\t提示:如果之前购买了冠唐仓库网页(并开通手机在线版)的用户不能访问的话，可能是服务器端还未升级，
+     	         那么可以联系我们的技术人员帮您升级。</string>
+    <string name="helper2_1">\t\t在线模式是指网络通畅且成功登录帐号的状态下。
+	      \n\t\t该模式下，移动端会在加载界面的时候自动从服务器端获取数据。
+	      \n\t\t需要注意的是仓库信息和参数信息等极少变动的数据，是不会在加载界面的时候自动获取的，需要使用者在同步界面下同步。\n\t该模式下，单据在保存的时候会自动即时提交到服务器。</string>
+    <string name="helper2_2">\t\t离线模式是指未与服务器连接并且对手机本地数据库进行的操作，这种模式主要在网络环境不稳定或者没有网络信号的情况下进行使用。
+     		 \n\t\t离线模式下，是不能从服务器获取数据和提交数据的，离线模式下进行的单据操作会报存在本地，用户在有网络的环境下登录在线模式，在 本地单据—>未上传单据中提交
+     		 \n\t\t离线密码是在在线模式登录成功后，在设置—>离线密码中设置。
+     		 \n\t\t*为了确保数据的准确性，在使用离线模式前请在有网络信号环境下同步货品数据信息*</string>
+    <string name="helper3_1">1.服务器只能接受当天提交的单据。
+     	       \n\n\t\t由于移动终端目前还不能往历史单据
+     	       中插入单据，所以只能接受当天提交的单据。
+     	       \n\n2.参数信息需要手动更新。
+     	       \n\n\t\t仓库信息、出入库类型、自定义字段
+     	       等需要手动更新，可以在数据更新和参数设置中更新参数。
+     	       	网络状况允许的情况下，最好经常更新，避免由于参数的错误导致不能提交数据或者提交的数据错误。</string>
+    <string name="helper3_2">3.选择最佳的使用模式。
+     	       \n\n\t\t三种使用模式各有优缺点，在线模式下软件运行的流畅度和网络环境有关，离线模式下数据不是最新的数据，
+     	       手动刷新的模式则较为折中，既能保证软件的流畅又能获取最新的数据。但选择哪一张模式还是取决于使用者所在
+     	       的使用环境和使用习惯。
+     	       \n\n4.功能全面的网页端。
+     	       \n\n\t\t网页端可以批量录入数据、全面的分析统计、打印单据、添加参数信息、设置系统参数、管理帐号、
+     	       备份和还原服务器数据等多种功能，所有手机端不能实现的功能可以尝试一下在网页端来实现。</string>
+    <string name="helper5_1">\t\t新建的出库单据、入库单据和盘点单据都需要填写单据的相关信息，其中日期目前仅支持当日时间，填写完单据信息之后，点击添加货品进入货品添加页面。</string>
+    <string name="helper5_2"> \t\t货品添加界面 可以对货品进行入库、出库、盘点等操作，左下角的拣货筐可以查看已添加的货品，点击右下角的添加完成按钮可以返回单据界面提交单据。</string>
+    <string name="helper5_3"> \t\t通过点击拣货筐和单据详情页面的已添加货品按钮可以查看已选商品，并可以对已选商品重新编辑，左滑商品选项可以删除该货品及相关操作。</string>
+    <string name="helper5_4">\t\t在出库单局和盘点单据的已选商品界面底部会有一个按钮，分别是检测货品不足和检测有误账面数。在货品出库时可能库存货品数量少于出库数量，所以可以点击校对出库数量大于库存数量(可以强制提交此类货品)；
+        在盘点货品时，获取的货品账面数量可能和服务端的账面数量不一致(很有可能是在盘点货品时，其他用户正在对该货品进行出入库，导致手机端和服务端的货品账面数量不一致)，点击按钮可以检测出账面数量不一致的货品，然后修改张面试(此错误必须修改才能提交单据))。</string>
+    <string name="helper5_5">\t\t在货品添加页面点击添加完成按钮，就回到了之前的但据详情界面，此时下面多了一个提交按钮，点击提交按钮就可以提交单据到服务端了，对于已提交的单据可以在本地单据功能模块中查看</string>
+    <string name="helper6_1">     	       \n\t\t参数信息、仓库信息有误：服务器端的参数信息和仓库信息有修改导致，可以先同步到本机，更新参数后修改
+     	       相应单据再提交。
+     	      \n\t\t出库时库存不足或盘点账面数不一致：出库时如果库存不足，根据网页端的设置进行提示或者禁止出库，可以在单据详情中进行检查有误的货品。
+     	       检测出有误的货品可以点击进行修改。盘点时操作也类似。
+     	      \n\t\t单据日期错误,禁止插入单据：服务端不接受插入历史单据的数据，如果日期出错，
+     	        那么修改单据的时候修改日期。</string>
+    <string name="helper7_1_1">1.新增货品的录入，货品图片的采集并上传(图片仅在新增货品时可以上传)。
+     	       \n2.按条件查询各类货品情况。
+     	       \n3.查看单据详情和新增单据。
+     	       \n4.可以查看货品具体明细情况。
+     	       \n5.可以进行在线离线两种操作方式。
+     	       \n6.初步设计了部分分析统计。
+     	       \n7.很多设置手机端是不能修改的，如需修改请在网页端进行。</string>
+    <string name="helper7_1_2">1.基本参数的录入，如出入库类型、自定义字段、仓库信息等。
+     	       \n2.基本信息的录入与导出，如货品信息、往来单位信息等。
+     	       \n3.系统设置，如是否启用审核模式、成本算法、单号规则等。
+     	       \n4.服务器数据库的备份与还原。
+     	       \n5.帐号管理与移动终端管理。
+     	       \n6.全面的分析统计。
+     	       \n7.单据打印与数据导出。
+     	       \n\n更多功能请登录网页端体验</string>
+    <string name="helper8_1">\t\t 在一些表单页面，单击其中某一条记录，该记录会被会被选中变成红色，便于用户查看，长按某一条记录会弹出一个详情界面，这样会更能直观的反映数据信息</string>
+    <string name="helper8_2">\t\t 一些数据列表提供了侧滑功能。</string>
+    <string name="guide1_3">1、随时随地查看 货品详情和图片
+	    \n2、在线、离线模式随时切换
+	    \n3、货品出入库更加快捷
+	    \n4、多种权限细分流程
+	    \n5、独立的本地数据库确保数据安全
+	    \n6、功能全面且强大的网页端支持</string>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/hp_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp" />
+
+    <TextView android:id="@+id/showchangantext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#90000000"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="15dp"
+        android:padding="8dp"
+        android:text="长按可对货品进行操作"
+        android:textColor="@color/white"
+        android:visibility="visible"/>
+    
+    <TextView
+        android:id="@+id/Prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+        android:text="货品还未添加"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</FrameLayout>

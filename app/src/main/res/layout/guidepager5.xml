@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:gravity="center"
+	android:background="@color/white">
+    
+	<ImageView
+        android:id="@+id/promptguide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/prompt1" />
+	<TextView
+        android:id="@+id/promptguide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/promptguide1"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="\t\t手机端注册的公司账户需要先到网页端导入仓库的货品信息、参数信息和完成相关设置，然后才能正常使用手机端。"
+        android:textSize="20dp"/>
+	<ImageView
+        android:id="@+id/promptguide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/promptguide2"
+        android:layout_alignLeft="@id/promptguide2"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/prompt3" />
+	<Button
+        android:id="@+id/t5_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promptguide3"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tutorial4_start" />
+</RelativeLayout>

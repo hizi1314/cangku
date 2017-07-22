@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yuanjiao_beijing"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/titletextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="管辖仓库"
+        android:textColor="#333333"
+        android:textSize="19dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/theme_background_grey" />
+
+    <ListView android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:divider="@color/theme_background_grey"
+        android:dividerHeight="2px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/theme_background_grey" />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@null"
+        android:text="确定"
+        android:textColor="#007aff"
+        android:textSize="19dp" />
+
+</LinearLayout>

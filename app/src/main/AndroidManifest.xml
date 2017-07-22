@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guantang.cangkuonline">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <application
+        android:name="com.guantang.cangkuonline.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo11"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="com.guantang.cangkuonline.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.NewLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.NewMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.FinalMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.Helper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.Helper_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.ServerPref"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.Check_Code"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.HpInfo_ListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.HpInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.RecoverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.Img_chose"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.ImgSwitch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.LB_ChoseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.HP_filterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.Moved_DJ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.MX_filterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DwListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.MX_InfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/yuanjiao_activity" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddDJActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DepListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.HP_choseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.HpListDetailsWriteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DJ_detailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.WebHelper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DJfilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.History_DJActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.HistoryDJ_DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.PanDianActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddRegActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.Pwd_prefer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.ParameterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.Parameter_PrefActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddDepActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.CKListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.BackUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DataBaseManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.Moved_hpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.NetDJActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DJMXCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.QuestionHelperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.ChannelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.ShowImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.ModfiyPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.SettingckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.SettingChuRuTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddLBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.MySubmitDJActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.PayNoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.ModifyHPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.HpInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.LocalDJActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.UserManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.ToolManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.FreeUseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.OrderHP_choseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.OrderfilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.guantang.cangkuonline.activity.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.guantang.cangkuonline.activity.DDHpListDetailsWriteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DDdetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.SomeOneTypeOrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.CustomerListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddCustomerAndSupplierActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.AddVisitActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DwlbListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.CustomerAndSupplierDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.SeeVisitDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.EditCustomerAndSupplierActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.RegistrationInformationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.guantang.cangkuonline.activity.AddDiaoboActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DiaoboHpListDetailsWriteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DiaoboHP_choseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.DiaoboDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.NetDJfilterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.TransdDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.HpManagerListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+        <activity
+            android:name="com.guantang.cangkuonline.activity.New11Activity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56610c18e0f55af35f00285f" >
+        </meta-data>
+
+        <!-- <activity
+            android:name="com.alibaba.sdk.android.feedback.windvane.CustomHybirdActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ali_feedback_contentoverlay"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.alibaba.sdk.android.feedback.impl.ErrorPageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ali_feedback_contentoverlay" />
+
+        <receiver
+            android:name="com.alibaba.sdk.android.feedback.impl.NetworkChangeReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.alibaba.mtl.appmonitor.AppMonitorService" /> -->
+    </application>
+
+</manifest>

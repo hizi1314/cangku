@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_light" >
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/theme_orange"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@drawable/back_white_btn" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="选择功能模块" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/save"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titlelayout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/subscribe_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/bg_deep"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/my_category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="我的功能模块"
+                    android:textColor="@color/ziti1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/my_category_tip_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:text="单击移除功能模块，长按拖拽排序"
+                    android:textColor="@color/grey_deep"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_mid" />
+
+            <com.guantang.cangkuonline.channel.DragGrid
+                android:id="@+id/userGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="14dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="14.0px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_mid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_deep"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="12dp"
+                android:text="其他功能模块"
+                android:textColor="@color/ziti1"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_mid"/>
+
+            <com.guantang.cangkuonline.channel.OtherGridView
+                android:id="@+id/otherGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="14dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="14.0px" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/category_layout"
+        layout="@layout/subscribe_category_item"
+        android:visibility="gone" />
+
+</RelativeLayout>
